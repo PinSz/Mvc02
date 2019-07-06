@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>add-form</title>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <br>
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit" name="Espresso" value="Espresso" class="btn btn-primary">Espresso </button>
+            <button type="submit" name="Cappuccino"  class="btn btn-secondary">Cappuccino </button>
+            <button type="submit" name="Latte" class="btn btn-warning">Latte </button>
+            <button type="submit" name="Americano" class="btn btn-dark">Americano </button>
+            <br>
+            <button type="submit" name="Summary" class="btn btn-success">Summary </button>
+            <input type="text" value=" {{mix}}" style="width: 230px"/>{{test}}
+        </form>
+        <br>
+        <!-- <form method="POST">
+
+        </form> -->
+    <!-- <h3>Input form</h3>
+        <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">submit </button>
+        </form> -->
+    </div>
+
+{% endblock %}

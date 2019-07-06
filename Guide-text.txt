@@ -1,0 +1,15 @@
+django-admin startproject my_project
+python3 manage.py startapp app_mvc
+ในไฟล์ setting ตรง install_app เพิ่มชื่อ app_mvc
+
+python3 manage.py makemigrations[เพิ่มข้อมูลในModelsต้องmakemigrations]
+python3 manage.py migrate[และmigrate ทุกครั้ง]
+
+	(สร้างรหัสใช้สำหรับadmin)
+	-python3 manage.py createsuperuser
+	admin123
+	test1234
+
+python3 manage.py runserver 8080
+	http://127.0.0.1:8080/app_mvc/#
+
